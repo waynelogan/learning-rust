@@ -1,4 +1,5 @@
 fn main() {
-    let name = "Logan";
-    println!("Hello, {name}");
+    let name = "Wayne Logan";
+    let data = [1, 2, 3, 4];
+    println!("{name}, {data:?}")
 }
