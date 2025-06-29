@@ -1,5 +1,9 @@
+use std::io;
+
 fn main() {
-    let name = "Wayne Logan";
-    let data = [1, 2, 3, 4];
-    println!("{name}, {data:?}")
+    println!("Please enter your name");
+    let mut input = String::new();
+
+    io::stdin().read_line(&mut input).expect("Error reading input");
+    println!("Hello, {input}");
 }
